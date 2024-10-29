@@ -1,0 +1,32 @@
+[
+  {
+    "scientific_name": "Felis silvestris lybica",
+    "common_name": "African wildcat",
+    "countries": ["Egypt", "Sudan", "Ethiopia"]
+  },
+  {
+    "scientific_name": "Panthera pardus kotiya",
+    "common_name": "Sri Lankan leopard",
+    "countries": "Sri Lanka"
+  },
+  {
+    "scientific_name": "Prionailurus rubiginosus",
+    "common_name": "Rusty-spotted cat",
+    "countries": ["India", "Sri Lanka"]
+  },
+  {
+    "scientific_name": "Leopardus colocolo",
+    "common_name": "false",
+    "countries": ["Argentina", "Chile", "Bolivia"]
+  },
+  {
+    "scientific_name": "Caracal caracal",
+    "common_name": "Caracal",
+    "countries": ["South Africa", "Namibia", "Egypt"]
+  },
+  {
+    "scientific_name": "Lynx lynx",
+    "common_name": "false",
+    "countries": ["Russia", "Mongolia", "China"]
+  }
+]
