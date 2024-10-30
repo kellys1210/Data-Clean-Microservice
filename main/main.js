@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
-import axios from "axios";
 import fs from "fs/promises";
+import fetch from "node-fetch";
 
 const app = express();
 
@@ -16,20 +16,26 @@ router.get("/cat-data", async (req, res) => {
   try {
     const data = await fs.readFile(filePath, "utf8");
     const parsedData = JSON.parse(data);
+    console.log(parsedData);
     res.status(200).json(parsedData);
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: error.message });
   }
-
-  //   try {
-  //     const cleanedData = axios.get("http://localhost:5004");
-  //     console.log({ cleanedData });
-  //   } catch (error) {
-  //     console.error(error);
-  //     res.status(500).json({ message: error.message });
-  //   }
 });
+
+async function getCleanCatData() {
+  try {
+    const response = await fetch("http://localhost:5004");
+    const cleanedCatData = await response.json();
+    const stringData = JSON.stringify(cleanedCatData, null, 2);
+    console.log(stringData);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+getCleanCatData();
 
 app.use("/", router);
 
@@ -44,4 +50,4 @@ app.listen(PORT, (error) => {
 });
 
 // source venv/bin/activate
-
+// python3 data_clean.py
