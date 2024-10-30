@@ -32,7 +32,10 @@ router.get("/cat-data", async (_, res) => {
   }
 });
 
-// Method to handle receiving data back from microservice.
+// INITIATES MICROSERVICE COMMUNICATION: 
+// Sends request to fetch data from the microservice on port 5004.
+// When the microservice receives the request, it will send a request here to obtain the data.
+// Once data is cleaned, this method will receive it as a response.
 async function getCleanCatData() {
   try {
     // Fetches data from the local server where microservice is hosted. Once received, saves it to cleanedCatData.
@@ -51,7 +54,7 @@ async function getCleanCatData() {
   }
 }
 
-// Calls method to retrieve data from microservice.
+// Calls microservice to clean data.
 getCleanCatData();
 
 // Defines main program local server port as 5001
