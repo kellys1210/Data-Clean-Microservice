@@ -57,7 +57,7 @@ async function getCleanCatData() {
 
 The processed data is now available for your use within the catData variable.
 
-###UML Sequence Diagram:
+### UML Sequence Diagram:
 
 ![UML](CS361-A8-2024-10-30-163952.png)
 
