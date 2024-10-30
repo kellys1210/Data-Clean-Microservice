@@ -57,10 +57,11 @@ async function getCleanCatData() {
 
 The processed data is now available for your use within the catData variable.
 
-UML sequence diagram showing how requesting and receiving data works. Make it detailed enough that your teammate (and your grader) will understand.
+UML sequence diagram showing how requesting and receiving data works:
 
-![UML]/Users/Kelly/Desktop/361/A8/CS361-A8/CS361 A8-2024-10-30-163952.png)
+![UML](CS361-A8-2024-10-30-163952.png)
 
+In this example, you see the Main Program server obtaining the JSON data by reading from a JSON file. If you are using a database instead of a JSON file, you will replace with file system read with a call to your database.
 
 Write a mitigation plan by answering these questions:
 
