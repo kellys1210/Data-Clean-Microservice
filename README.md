@@ -59,6 +59,8 @@ The processed data is now available for your use within the catData variable.
 
 UML sequence diagram showing how requesting and receiving data works. Make it detailed enough that your teammate (and your grader) will understand.
 
+![UML]/Users/Kelly/Desktop/361/A8/CS361-A8/CS361 A8-2024-10-30-163952.png)
+
 
 Write a mitigation plan by answering these questions:
 
