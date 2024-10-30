@@ -8,10 +8,10 @@ Example call:
 
 const getCleanCatData = {
 
-    // Sends GET request to port where service is being hosted locally.
+    // Sends GET request to endpath where service is being hosted locally.
     // This example uses fetch, a JavaScript method for HTTP requests.
     // Fetch defaults to GET.
-    const response = fetch("http://localhost:5004");
+    const response = fetch("http://localhost:5004/");
 }
 ```
 
