@@ -1,4 +1,4 @@
-# How to request data from the microservice:
+### How to request data from the microservice:
 
 1. Send a GET HTTP request to the microservice's endpath. The endpath for this microservice is '/', and the port is is hosted locally on is defined as 5004.
 
@@ -21,7 +21,7 @@ const getCleanCatData = {
 fetchData();
 ```
 
-# How to receive data from the microservice:
+### How to receive data from the microservice:
 
 1. When the microservice receives the request, it will process the data it receives at the endpath defined in the GET request shown above.
 
